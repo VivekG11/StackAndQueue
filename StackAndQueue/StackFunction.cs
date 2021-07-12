@@ -20,7 +20,27 @@ namespace StackAndQueue
             }
             this.top = node;
             Console.WriteLine(node.data+" is added to stack.");
-            
+        }
+        public void Pop()
+        {
+            if(this.top == null)
+            {
+                Console.WriteLine("STack is Empty.");
+                return;
+            }
+            Console.WriteLine("Popped element is :"+this.top.data);
+            this.top = this.top.next;
+        }
+        public void Peek()
+        {
+            if(this.top == null)
+            {
+                Console.WriteLine("Stack is Empty...");
+            }
+            else
+            {
+                Console.WriteLine(top.data);
+            }
         }
         public void Display()
         {
