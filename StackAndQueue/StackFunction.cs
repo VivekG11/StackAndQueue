@@ -18,6 +18,7 @@ namespace StackAndQueue
             {
                 node.next = this.top;
             }
+            this.top = node;
             Console.WriteLine(node.data+" is added to stack.");
             
         }
@@ -29,10 +30,10 @@ namespace StackAndQueue
             {
                 Console.WriteLine("Stack is Empty......");
             }
-            Console.WriteLine("Elements in he Stack are ......");
+            Console.WriteLine("Elements in the Stack are ......");
             while (temp!= null)
             {
-                Console.Write(temp.data+",");
+                Console.WriteLine(temp.data);
                 temp = temp.next;
                 count++;
             }
